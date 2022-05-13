@@ -1,0 +1,571 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+body .wrapper {
+  padding: 35px 190px 32px 190px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+body .wrapper #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+body .wrapper #header .header__logo-icon {
+  cursor: pointer;
+}
+body .wrapper #header .menuAndButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 34px;
+}
+body .wrapper #header .menuAndButtons .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .menuAndButtons .header__menu .menu__item {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #b8becd;
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+body .wrapper #header .menuAndButtons .header__menu .menu__item:hover {
+  color: #202336;
+}
+body .wrapper #header .menuAndButtons .header__menu .menu__item:not(:last-child) {
+  margin-right: 34px;
+}
+body .wrapper #header .menuAndButtons .headerButtons__box {
+  margin-left: 34px;
+}
+body .wrapper #header .menuAndButtons .headerButtons__item {
+  padding: 12px 46px;
+  margin: 18px;
+  color: #fb8f1d;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Inter";
+  border: 2px solid #fb8f1d;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+body .wrapper #header .menuAndButtons .headerButtons__item:hover {
+  color: #fff;
+  background-color: #fb8f1d;
+}
+body .wrapper #header .menuAndButtons .headerButtons__item:last-child {
+  margin: 0;
+}
+body .wrapper #main .button {
+  padding: 12px 46px;
+  margin: 18px;
+  color: #fb8f1d;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Inter";
+  border: 2px solid #fb8f1d;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+body .wrapper #main .button:hover {
+  color: #fff;
+  background-color: #fb8f1d;
+}
+body .wrapper #main .button:last-child {
+  margin: 0;
+}
+body .wrapper #main .exploreAndTravel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 270px;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 64px;
+  color: #202336;
+  margin-bottom: 74px;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__descr {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 22px;
+  color: #202336;
+  margin-bottom: 21px;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__line {
+  height: 2px;
+  width: 32px;
+  background-color: #202336;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 48px;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__selectBox {
+  max-width: 471px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__selectBox .exploreAndTravel__select {
+  height: 52px;
+  width: 220px;
+  border: 0.8px solid #afb0b9;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0px 0px 35px 0px;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__selectBox .exploreAndTravel__select .select__item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #4a4c53;
+  text-align: center;
+}
+body .wrapper #main .exploreAndTravel .exploreAndTravel__imgBox {
+  position: relative;
+  left: 147px;
+}
+body .wrapper #main .newWay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 262px;
+}
+body .wrapper #main .newWay .newWay__imgBox {
+  position: relative;
+  right: 102px;
+}
+body .wrapper #main .newWay .newWay__container {
+  max-width: 439px;
+}
+body .wrapper #main .newWay .newWay__container .newWay__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+body .wrapper #main .newWay .newWay__container .newWay__descr {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 17px;
+  color: #7d7987;
+  margin-bottom: 33px;
+}
+body .wrapper #main .countries {
+  padding: 0px 49px;
+  margin-bottom: 232px;
+}
+body .wrapper #main .countries .countries__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 56px;
+}
+body .wrapper #main .countries .countries__header .countries__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+}
+body .wrapper #main .countries .countries__header .countries__view {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fb8f1d;
+  cursor: pointer;
+}
+body .wrapper #main .countries .countries__cardsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .countries .countries__cardsBox .countries__card-item {
+  border-radius: 4px;
+  position: relative;
+}
+body .wrapper #main .countries .countries__cardsBox .countries__card-item:not(:last-child) {
+  padding-right: 6px;
+}
+body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-imgBox {
+  height: 332px;
+  width: 261px;
+}
+body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-info {
+  padding: 11px 32px 0px 0px;
+  background-color: #fff;
+  border-radius: 0px 6px 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-info .countries__card-title {
+  font-weight: 600;
+  font-size: 17px;
+  color: #042521;
+}
+body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-info .countries__card-nameCountry {
+  font-weight: 500;
+  font-size: 15px;
+  color: #80918e;
+}
+body .wrapper #main .guides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 41px 0px 49px;
+  margin-bottom: 248px;
+}
+body .wrapper #main .guides .guides__container {
+  max-width: 439px;
+}
+body .wrapper #main .guides .guides__container .guides__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+body .wrapper #main .guides .guides__container .guides__descr {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 17px;
+  color: #7d7987;
+  margin-bottom: 33px;
+}
+body .wrapper #main .testimonials__title {
+  padding-left: 49px;
+  margin-bottom: 43px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+}
+body .wrapper #main .edwardNewgate {
+  padding: 0px 134px 0px 49px;
+  margin-bottom: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__starsBox {
+  margin-bottom: 30px;
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__starsBox .star__icon:not(:last-child) {
+  margin-right: 16px;
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__descr {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__personalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__personalInfo .personalInfo__name {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__personalInfo .personalInfo__who {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.85);
+}
+body .wrapper #main .edwardNewgate .edwardNewgate__imgBox .edwardNewgate__img {
+  border-radius: 4px;
+}
+body .wrapper #main .trendingStories {
+  padding: 0px 49px;
+  margin-bottom: 329px;
+}
+body .wrapper #main .trendingStories .trendingStories__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 56px;
+}
+body .wrapper #main .trendingStories .trendingStories__header .trendingStories__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+}
+body .wrapper #main .trendingStories .trendingStories__header .trendingStories__view {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fb8f1d;
+  cursor: pointer;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item {
+  max-width: 266px;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item:not(:last-child) {
+  margin-right: 25px;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-imgBox {
+  height: 231px;
+  width: 261px;
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-descr {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #7d7987;
+  margin-bottom: 23px;
+}
+body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-click-readMore {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 15px;
+  color: #fb8f1d;
+  cursor: pointer;
+}
+body .wrapper #footer {
+  background-color: #f9f9fb;
+  padding-top: 78px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 77px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn__imgBox {
+  margin-bottom: 26px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn__descr-top {
+  margin-bottom: 55px;
+  max-width: 298px;
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 18px;
+  color: #848484;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn__descr-bottom {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 17px;
+  color: #848484;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations {
+  margin-right: 158px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations .destinations__title {
+  list-style: none;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations .destinations__item {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 18px;
+  color: #848484;
+  list-style: none;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations .destinations__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop {
+  margin-right: 126px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop .shop__title {
+  list-style: none;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop .shop__item {
+  list-style: none;
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 18px;
+  color: #848484;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop .shop__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__interests .interests__title {
+  list-style: none;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__interests .interests__item {
+  list-style: none;
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 18px;
+  color: #848484;
+}
+body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__interests .interests__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+body .wrapper #footer .footer__wrapper .footer__separator {
+  margin-bottom: 30px;
+  min-width: 1219px;
+  height: 0.6px;
+  background-color: #c4c4c4;
+}
+body .wrapper #footer .footer__wrapper .footer__iconsMedia-box {
+  margin: 0 auto;
+  max-width: 249px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper #footer .footer__wrapper .footer__iconsMedia-box .footer__iconsMedia-icon:not(:last-child) {
+  margin-right: 35px;
+}

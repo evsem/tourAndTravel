@@ -1,0 +1,340 @@
+#main {
+  .button {
+    padding: 12px 46px;
+    margin: 18px;
+    color: #fb8f1d;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Inter";
+    border: 2px solid #fb8f1d;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    &:hover {
+      color: #fff;
+      background-color: #fb8f1d;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .exploreAndTravel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 270px;
+    .exploreAndTravel__container {
+      .exploreAndTravel__title {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 64px;
+        color: #202336;
+        margin-bottom: 74px;
+      }
+      .exploreAndTravel__descr {
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 22px;
+        color: #202336;
+        margin-bottom: 21px;
+      }
+      .exploreAndTravel__line {
+        height: 2px;
+        width: 32px;
+        background-color: #202336;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 48px;
+      }
+      .exploreAndTravel__selectBox {
+        max-width: 471px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 47px;
+        .exploreAndTravel__select {
+          height: 52px;
+          width: 220px;
+          border: 0.8px solid #afb0b9;
+          border-radius: 6px;
+          cursor: pointer;
+          margin: 0px 0px 35px 0px;
+          .select__item {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 15px;
+            color: #4a4c53;
+            text-align: center;
+          }
+        }
+      }
+
+      .exploreAndTravel__button {
+      }
+    }
+
+    .exploreAndTravel__imgBox {
+      position: relative;
+      left: 147px;
+      .exploreAndTravel__img {
+      }
+    }
+  }
+
+  .newWay {
+    display: flex;
+    align-items: center;
+    margin-bottom: 262px;
+    .newWay__imgBox {
+      position: relative;
+      right: 102px;
+      .newWay__img {
+      }
+    }
+
+    .newWay__container {
+      max-width: 439px;
+      .newWay__title {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .newWay__descr {
+        font-family: "Mulish";
+        font-weight: 300;
+        font-size: 17px;
+        color: #7d7987;
+        margin-bottom: 33px;
+      }
+      .newWay__button {
+      }
+    }
+  }
+
+  .countries {
+    padding: 0px 49px;
+    margin-bottom: 232px;
+    .countries__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      .countries__title {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+      .countries__view {
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 17px;
+        align-items: center;
+        color: #fb8f1d;
+        cursor: pointer;
+      }
+    }
+
+    .countries__cardsBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .countries__card-item {
+        border-radius: 4px;
+        position: relative;
+
+        &:not(:last-child) {
+          padding-right: 6px;
+        }
+        .countries__card-imgBox {
+          height: 332px;
+          width: 261px;
+          .countries__card-img {
+            // overflow: hidden;
+          }
+        }
+
+        .countries__card-info {
+          padding: 11px 32px 0px 0px;
+          background-color: #fff;
+          border-radius: 0px 6px 0px 0px;
+          align-items: center;
+          font-family: "Inter";
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          .countries__card-title {
+            font-weight: 600;
+            font-size: 17px;
+            color: #042521;
+          }
+          .countries__card-nameCountry {
+            font-weight: 500;
+            font-size: 15px;
+            color: #80918e;
+          }
+        }
+      }
+    }
+  }
+
+  .guides {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 41px 0px 49px;
+    margin-bottom: 248px;
+    .guides__container {
+      max-width: 439px;
+      .guides__title {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .guides__descr {
+        font-family: "Mulish";
+        font-weight: 300;
+        font-size: 17px;
+        color: #7d7987;
+        margin-bottom: 33px;
+      }
+      .guides__button {
+      }
+    }
+    .guides__imgBox {
+      .guides__img {
+      }
+    }
+  }
+
+  .testimonials__title {
+    padding-left: 49px;
+    margin-bottom: 43px;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+  }
+
+  .edwardNewgate {
+    padding: 0px 134px 0px 49px;
+    margin-bottom: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .edwardNewgate__container {
+      .edwardNewgate__starsBox {
+        margin-bottom: 30px;
+        .star__icon {
+          &:not(:last-child) {
+            margin-right: 16px;
+          }
+        }
+      }
+
+      .edwardNewgate__descr {
+        font-family: "Mulish";
+        font-weight: 400;
+        font-size: 24px;
+        color: #000000;
+        max-width: 450px;
+        margin-bottom: 40px;
+      }
+      .edwardNewgate__personalInfo {
+        display: flex;
+        flex-direction: column;
+        .personalInfo__name {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 22px;
+          color: #000000;
+          margin-bottom: 10px;
+        }
+        .personalInfo__who {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 18px;
+          color: rgba(0, 0, 0, 0.85);
+        }
+      }
+    }
+
+    .edwardNewgate__imgBox {
+      .edwardNewgate__img {
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .trendingStories {
+    padding: 0px 49px;
+    margin-bottom: 329px;
+    .trendingStories__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      .trendingStories__title {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+      .trendingStories__view {
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 17px;
+        align-items: center;
+        color: #fb8f1d;
+        cursor: pointer;
+      }
+    }
+
+    .trendingStories__cardsBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .trendingStories__card-item {
+        max-width: 266px;
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+        .trendingStories__card-imgBox {
+          height: 231px;
+          width: 261px;
+          overflow: hidden;
+          margin-bottom: 13px;
+          .trendingStories__card-img {
+          }
+        }
+
+        .trendingStories__card-title {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 19px;
+          color: #000000;
+          margin-bottom: 13px;
+        }
+        .trendingStories__card-descr {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 15px;
+          color: #7d7987;
+          margin-bottom: 23px;
+        }
+        .trendingStories__card-click-readMore {
+          font-family: "Inter";
+          font-weight: 600;
+          font-size: 15px;
+          color: #fb8f1d;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

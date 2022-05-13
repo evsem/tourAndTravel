@@ -1,0 +1,123 @@
+#footer {
+  background-color: #f9f9fb;
+  padding-top: 78px;
+  .footer__wrapper {
+    .footer__columns {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 77px;
+      .leftColumn {
+        .leftColumn__imgBox {
+          margin-bottom: 26px;
+          .leftColumn__img {
+          }
+        }
+
+        .leftColumn__descr-top {
+          margin-bottom: 55px;
+          max-width: 298px;
+          font-family: 'Mulish';
+          font-weight: 300;
+          font-size: 18px;
+          color: #848484;
+        }
+        .leftColumn__descr-bottom {
+          font-family: 'Mulish';
+          font-weight: 300;
+          font-size: 17px;
+          color: #848484;
+        }
+      }
+
+      .rightColumn {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        .rightColumn__destinations {
+          margin-right: 158px;
+          .destinations__title {
+            list-style: none;
+            font-family: 'Mulish';
+            font-weight: 700;
+            font-size: 19px;
+            color: #000000;
+            margin-bottom: 35px;
+          }
+          .destinations__item {
+            font-family: 'Mulish';
+            font-weight: 300;
+            font-size: 18px;
+            color: #848484;
+            list-style: none;
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+          }
+        }
+
+        .rightColumn__shop {
+          margin-right: 126px;
+          .shop__title {
+            list-style: none;
+            font-family: 'Mulish';
+            font-weight: 700;
+            font-size: 19px;
+            color: #000000;
+            margin-bottom: 35px;
+          }
+          .shop__item {
+            list-style: none;
+            font-family: 'Mulish';
+            font-weight: 300;
+            font-size: 18px;
+            color: #848484;
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+          }
+        }
+
+        .rightColumn__interests {
+          .interests__title {
+            list-style: none;
+            font-family: 'Mulish';
+            font-weight: 700;
+            font-size: 19px;
+            color: #000000;
+            margin-bottom: 35px;
+          }
+          .interests__item {
+            list-style: none;
+            font-family: 'Mulish';
+            font-weight: 300;
+            font-size: 18px;
+            color: #848484;
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__separator {
+      margin-bottom: 30px;
+      min-width: 1219px;
+      height: 0.6px;
+      background-color: #c4c4c4;
+    }
+
+    .footer__iconsMedia-box {
+      margin: 0 auto;
+      max-width: 249px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .footer__iconsMedia-icon {
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}

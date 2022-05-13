@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  .wrapper {
+    padding: 35px 190px 32px 190px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    @import 'header.scss';
+    @import 'main.scss';
+    @import 'footer.scss';
+  }
+}
