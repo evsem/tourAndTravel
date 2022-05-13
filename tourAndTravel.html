@@ -18,24 +18,23 @@
   <body>
     <div class="wrapper">
       <header id="header">
-        <div class="header__logo">
-          <img
-            src="./src/icons/logo.svg"
-            alt="logo"
-            class="header__logo-icon"
-          />
+        <div class="header__logo-img__box">
+          <img src="./src/icons/logo.svg" alt="logo" class="header__logo-img" />
         </div>
 
-        <div class="menuAndButtons">
-          <ul class="header__menu">
-            <li class="menu__item">Home</li>
-            <li class="menu__item">Destinations</li>
-            <li class="menu__item">About</li>
-            <li class="menu__item">Partner</li>
-          </ul>
-          <div class="headerButtons__box">
-            <button class="headerButtons__item">Login</button>
-            <button class="headerButtons__item">Register</button>
+        <div class="header__right">
+          <nav class="header__right-menu">
+            <ul class="header__right-menu__list">
+              <li class="header__menu-list__item">Home</li>
+              <li class="header__menu-list__item">Destinations</li>
+              <li class="header__menu-list__item">About</li>
+              <li class="header__menu-list__item">Partner</li>
+            </ul>
+          </nav>
+
+          <div class="header__right-buttons">
+            <button class="header__right-buttons__button">Login</button>
+            <button class="header__right-buttons__button">Register</button>
           </div>
         </div>
       </header>
@@ -46,29 +45,57 @@
             <h1 class="exploreAndTravel__title">Explore and Travel</h1>
             <p class="exploreAndTravel__descr">Holiday finder</p>
             <div class="exploreAndTravel__line"></div>
-            <div class="exploreAndTravel__selectBox">
+            <div class="exploreAndTravel__select-box">
               <select id="#" class="exploreAndTravel__select">
-                <option value="#" disabled class="select__item">
+                <option
+                  value="#"
+                  disabled
+                  class="exploreAndTravel__select-item"
+                >
                   Location
                 </option>
-                <option value="#" class="select__item">Cascade</option>
+                <option value="#" class="exploreAndTravel__select-item">
+                  Cascade
+                </option>
               </select>
 
               <select id="#" class="exploreAndTravel__select">
-                <option value="#" disabled class="select__item">
+                <option
+                  value="#"
+                  disabled
+                  class="exploreAndTravel__select-item"
+                >
                   Activity
                 </option>
-                <option value="#" class="select__item">Cascade</option>
+                <option value="#" class="exploreAndTravel__select-item">
+                  Cascade
+                </option>
               </select>
 
               <select id="#" class="exploreAndTravel__select">
-                <option value="#" disabled class="select__item">Grade</option>
-                <option value="#" class="select__item">Cascade</option>
+                <option
+                  value="#"
+                  disabled
+                  class="exploreAndTravel__select-item"
+                >
+                  Grade
+                </option>
+                <option value="#" class="exploreAndTravel__select-item">
+                  Cascade
+                </option>
               </select>
 
               <select id="#" class="exploreAndTravel__select">
-                <option value="#" disabled class="select__item">Date</option>
-                <option value="#" class="select__item">Cascade</option>
+                <option
+                  value="#"
+                  disabled
+                  class="exploreAndTravel__select-item"
+                >
+                  Date
+                </option>
+                <option value="#" class="exploreAndTravel__select-item">
+                  Cascade
+                </option>
               </select>
             </div>
             <button class="exploreAndTravel__button button">Explore</button>
@@ -84,7 +111,7 @@
         </section>
 
         <section class="newWay">
-          <div class="newWay__imgBox">
+          <div class="newWay__img-box">
             <img src="./src/img/2.jpg" alt="Error" class="newWay__img" />
           </div>
 
@@ -102,62 +129,62 @@
         <section class="countries">
           <div class="countries__header">
             <h3 class="countries__title">Featured destinations</h3>
-            <span class="countries__view">View all</span>
+            <span class="countries__text">View all</span>
           </div>
-          <div class="countries__cardsBox">
-            <div class="countries__card-item">
-              <div class="countries__card-imgBox">
+          <div class="countries__cards">
+            <div class="countries__cards-item">
+              <div class="countries__cards-img__box">
                 <img
                   src="./src/img/indonesia.jpg"
                   alt="#"
-                  class="countries__card-img"
+                  class="countries__cards-img"
                 />
               </div>
-              <div class="countries__card-info">
-                <h5 class="countries__card-title">Raja Ampat</h5>
-                <span class="countries__card-nameCountry">Indonesia</span>
+              <div class="countries__cards-info">
+                <h5 class="countries__cards-info__title">Raja Ampat</h5>
+                <span class="countries__cards-info__country">Indonesia</span>
               </div>
             </div>
 
-            <div class="countries__card-item">
-              <div class="countries__card-imgBox">
+            <div class="countries__cards-item">
+              <div class="countries__cards-img__box">
                 <img
                   src="./src/img/china.jpg"
                   alt="#"
-                  class="countries__card-img"
+                  class="countries__cards-img"
                 />
               </div>
-              <div class="countries__card-info">
-                <h5 class="countries__card-title">Fanjingshan</h5>
-                <span class="countries__card-nameCountry">China</span>
+              <div class="countries__cards-info">
+                <h5 class="countries__cards-info__title">Fanjingshan</h5>
+                <span class="countries__cards-info__country">China</span>
               </div>
             </div>
 
-            <div class="countries__card-item">
-              <div class="countries__card-imgBox">
+            <div class="countries__cards-item">
+              <div class="countries__cards-img__box">
                 <img
                   src="./src/img/switzerland.jpg"
                   alt="#"
-                  class="countries__card-img"
+                  class="countries__cards-img"
                 />
               </div>
-              <div class="countries__card-info">
-                <h5 class="countries__card-title">Vevey</h5>
-                <span class="countries__card-nameCountry">Switzerland</span>
+              <div class="countries__cards-info">
+                <h5 class="countries__cards-info__title">Vevey</h5>
+                <span class="countries__cards-info__country">Switzerland</span>
               </div>
             </div>
 
-            <div class="countries__card-item">
-              <div class="countries__card-imgBox">
+            <div class="countries__cards-item">
+              <div class="countries__cards-img__box">
                 <img
                   src="./src/img/montenegro.jpg"
                   alt="#"
-                  class="countries__card-img"
+                  class="countries__cards-img"
                 />
               </div>
-              <div class="countries__card-info">
-                <h5 class="countries__card-title">Skadar</h5>
-                <span class="countries__card-nameCountry">Montenegro</span>
+              <div class="countries__cards-info">
+                <h5 class="countries__cards-info__title">Skadar</h5>
+                <span class="countries__cards-info__country">Montenegro</span>
               </div>
             </div>
           </div>
@@ -173,7 +200,7 @@
             </p>
             <button class="guides__button button">Download</button>
           </div>
-          <div class="guides__imgBox">
+          <div class="guides__img-box">
             <img src="./src/img/3.jpg" alt="Error" class="guides__img" />
           </div>
         </section>
@@ -182,25 +209,45 @@
 
         <section class="edwardNewgate">
           <div class="edwardNewgate__container">
-            <div class="edwardNewgate__starsBox">
-              <img src="./src/icons/star.svg" alt="star" class="star__icon" />
-              <img src="./src/icons/star.svg" alt="star" class="star__icon" />
-              <img src="./src/icons/star.svg" alt="star" class="star__icon" />
-              <img src="./src/icons/star.svg" alt="star" class="star__icon" />
-              <img src="./src/icons/star.svg" alt="star" class="star__icon" />
+            <div class="edwardNewgate__stars-box">
+              <img
+                src="./src/icons/star.svg"
+                alt="star"
+                class="edwardNewgate__star"
+              />
+              <img
+                src="./src/icons/star.svg"
+                alt="star"
+                class="edwardNewgate__star"
+              />
+              <img
+                src="./src/icons/star.svg"
+                alt="star"
+                class="edwardNewgate__star"
+              />
+              <img
+                src="./src/icons/star.svg"
+                alt="star"
+                class="edwardNewgate__star"
+              />
+              <img
+                src="./src/icons/star.svg"
+                alt="star"
+                class="edwardNewgate__star"
+              />
             </div>
             <p class="edwardNewgate__descr">
               “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
               dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit
               amet turpis nec”
             </p>
-            <div class="edwardNewgate__personalInfo">
-              <span class="personalInfo__name">Edward Newgate</span>
-              <span class="personalInfo__who">Founder Circle</span>
+            <div class="edwardNewgate__info">
+              <span class="personalInfo__info-name">Edward Newgate</span>
+              <span class="personalInfo__info-position">Founder Circle</span>
             </div>
           </div>
 
-          <div class="edwardNewgate__imgBox">
+          <div class="edwardNewgate__img-box">
             <img
               src="./src/img/edward.jpg"
               alt="edward"
@@ -211,88 +258,80 @@
 
         <section class="trendingStories">
           <div class="trendingStories__header">
-            <h3 class="trendingStories__title">Trending stories</h3>
-            <span class="trendingStories__view">View all</span>
+            <h3 class="trendingStories__header-title">Trending stories</h3>
+            <span class="trendingStories__header-text">View all</span>
           </div>
-          <div class="trendingStories__cardsBox">
-            <div class="trendingStories__card-item">
-              <div class="trendingStories__card-imgBox">
+          <div class="trendingStories__cards">
+            <div class="trendingStories__cards-item">
+              <div class="trendingStories__cards-img__box">
                 <img
                   src="./src/img/girl.jpg"
                   alt="girl"
-                  class="trendingStories__card-img"
+                  class="trendingStories__cards-img"
                 />
               </div>
-              <h6 class="trendingStories__card-title">
+              <h6 class="trendingStories__cards-title">
                 The many benefits of taking a healing holiday
               </h6>
-              <p class="trendingStories__card-descr">
+              <p class="trendingStories__cards-descr">
                 ‘Helaing holidays’ are on the rise tohelp maximise your health
                 and happines...
               </p>
-              <span class="trendingStories__card-click-readMore"
-                >Read more</span
-              >
+              <span class="trendingStories__cards-click">Read more</span>
             </div>
 
-            <div class="trendingStories__card-item">
-              <div class="trendingStories__card-imgBox">
+            <div class="trendingStories__cards-item">
+              <div class="trendingStories__cards-img__box">
                 <img
                   src="./src/img/food.jpg"
                   alt="food"
-                  class="trendingStories__card-img"
+                  class="trendingStories__cards-img"
                 />
               </div>
-              <h6 class="trendingStories__card-title">
+              <h6 class="trendingStories__cards-title">
                 The best Kyoto restaurant to try Japanese food
               </h6>
-              <p class="trendingStories__card-descr">
+              <p class="trendingStories__cards-descr">
                 From tofu to teahouses, here’s our guide to Kyoto’s best
                 restaurants to visit...
               </p>
-              <span class="trendingStories__card-click-readMore"
-                >Read more</span
-              >
+              <span class="trendingStories__cards-click">Read more</span>
             </div>
 
-            <div class="trendingStories__card-item">
-              <div class="trendingStories__card-imgBox">
+            <div class="trendingStories__cards-item">
+              <div class="trendingStories__cards-img__box">
                 <img
                   src="./src/img/itza.jpg"
                   alt="itza"
-                  class="trendingStories__card-img"
+                  class="trendingStories__cards-img"
                 />
               </div>
-              <h6 class="trendingStories__card-title">
+              <h6 class="trendingStories__cards-title">
                 Skip Chichen Itza and head to this remote Yucatan
               </h6>
-              <p class="trendingStories__card-descr">
+              <p class="trendingStories__cards-descr">
                 It’s remote and challenging to get, but braving the jungle and
                 exploring these ruins without the...
               </p>
-              <span class="trendingStories__card-click-readMore"
-                >Read more</span
-              >
+              <span class="trendingStories__cards-click">Read more</span>
             </div>
 
-            <div class="trendingStories__card-item">
-              <div class="trendingStories__card-imgBox">
+            <div class="trendingStories__cards-item">
+              <div class="trendingStories__cards-img__box">
                 <img
                   src="./src/img/surf.jpg"
                   alt="surf"
-                  class="trendingStories__card-img"
+                  class="trendingStories__cards-img"
                 />
               </div>
-              <h6 class="trendingStories__card-title">
+              <h6 class="trendingStories__cards-title">
                 Surf’s up at these beginner spots around the world
               </h6>
-              <p class="trendingStories__card-descr">
+              <p class="trendingStories__cards-descr">
                 If learning to surf has in on your to- do list for a while, the
                 good news is: it’s never too late...
               </p>
-              <span class="trendingStories__card-click-readMore"
-                >Read more</span
-              >
+              <span class="trendingStories__cards-click">Read more</span>
             </div>
           </div>
         </section>
@@ -301,78 +340,80 @@
       <footer id="footer">
         <section class="footer__wrapper">
           <div class="footer__columns">
-            <div class="leftColumn">
-              <div class="leftColumn__imgBox">
+            <div class="footer__columns-left">
+              <div class="footer__left-img__box">
                 <img
                   src="./src/icons/logo.svg"
                   alt="logo"
-                  class="leftColumn__img"
+                  class="footer__left-img"
                 />
               </div>
-              <p class="leftColumn__descr-top">
+              <p class="footer__columns-left__descr">
                 Plan and book your perfect trip with expert advice, travel tips
                 destination information from us
               </p>
-              <p class="leftColumn__descr-bottom">
+              <span class="footer__columns-left__text">
                 ©2020 Thousand Sunny. All rights reserved
-              </p>
+              </span>
             </div>
 
-            <div class="rightColumn">
-              <ul class="rightColumn__destinations">
-                <li class="destinations__title">Destinations</li>
-                <li class="destinations__item">Africa</li>
-                <li class="destinations__item">Antarctica</li>
-                <li class="destinations__item">Asia</li>
-                <li class="destinations__item">Europe</li>
-                <li class="destinations__item">America</li>
+            <div class="footer__columns-right">
+              <ul class="footer__columns-right__list">
+                <li class="footer__right-list__title">Destinations</li>
+                <li class="footer__right-list__item">Africa</li>
+                <li class="footer__right-list__item">Antarctica</li>
+                <li class="footer__right-list__item">Asia</li>
+                <li class="footer__right-list__item">Europe</li>
+                <li class="footer__right-list__item">America</li>
               </ul>
 
-              <ul class="rightColumn__shop">
-                <li class="shop__title">Shop</li>
-                <li class="shop__item">Destination Guides</li>
-                <li class="shop__item">Pictorial & Gifts</li>
-                <li class="shop__item">Special Offers</li>
-                <li class="shop__item">Delivery Times</li>
-                <li class="shop__item">FAQs</li>
+              <ul class="footer__columns-right__list">
+                <li class="footer__right-list__title">Shop</li>
+                <li class="footer__right-list__item">Destination Guides</li>
+                <li class="footer__right-list__item">Pictorial & Gifts</li>
+                <li class="footer__right-list__item">Special Offers</li>
+                <li class="footer__right-list__item">Delivery Times</li>
+                <li class="footer__right-list__item">FAQs</li>
               </ul>
 
-              <ul class="rightColumn__interests">
-                <li class="interests__title">Interests</li>
-                <li class="interests__item">Adventure Travel</li>
-                <li class="interests__item">Art And Culture</li>
-                <li class="interests__item">Wildlife And Nature</li>
-                <li class="interests__item">Family Holidays</li>
-                <li class="interests__item">Food And Drink</li>
+              <ul class="footer__columns-right__list">
+                <li class="footer__right-list__title">Interests</li>
+                <li class="footer__right-list__item">Adventure Travel</li>
+                <li class="footer__right-list__item">Art And Culture</li>
+                <li class="footer__right-list__item">Wildlife And Nature</li>
+                <li class="footer__right-list__item">Family Holidays</li>
+                <li class="footer__right-list__item">Food And Drink</li>
               </ul>
             </div>
           </div>
+
           <div class="footer__separator"></div>
-          <div class="footer__iconsMedia-box">
+
+          <div class="footer__icons-img__box">
             <img
               src="./src/icons/twitter.svg"
               alt="twitter"
-              class="footer__iconsMedia-icon"
+              class="footer__icons-img"
             />
             <img
               src="./src/icons/facebook.svg"
               alt="facebook"
-              class="footer__iconsMedia-icon"
+              class="footer__icons-img"
             />
             <img
               src="./src/icons/insta.svg"
               alt="insta"
-              class="footer__iconsMedia-icon"
+              class="footer__icons-img"
             />
             <img
               src="./src/icons/linkedIn.svg"
               alt="linkedIn"
-              class="footer__iconsMedia-icon"
+              class="footer__icons-img"
             />
             <img
               src="./src/icons/youtube.svg"
               alt="youtube"
-              class="footer__iconsMedia-icon"
+              class="footer__icons-img"
             />
           </div>
         </section>

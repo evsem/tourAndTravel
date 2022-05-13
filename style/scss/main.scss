@@ -47,8 +47,8 @@
         border-radius: 4px;
         margin-bottom: 48px;
       }
-      .exploreAndTravel__selectBox {
-        max-width: 471px;
+      .exploreAndTravel__select-box {
+        min-width: 500px;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 47px;
@@ -58,8 +58,8 @@
           border: 0.8px solid #afb0b9;
           border-radius: 6px;
           cursor: pointer;
-          margin: 0px 0px 35px 0px;
-          .select__item {
+          margin: 0px 10px 35px 10px;
+          .exploreAndTravel__select-item {
             font-family: "Inter";
             font-weight: 400;
             font-size: 15px;
@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 262px;
-    .newWay__imgBox {
+    .newWay__img-box {
       position: relative;
       right: 102px;
       .newWay__img {
@@ -127,7 +127,7 @@
         font-size: 36px;
         color: #000000;
       }
-      .countries__view {
+      .countries__text {
         font-family: "Inter";
         font-weight: 600;
         font-size: 17px;
@@ -137,26 +137,26 @@
       }
     }
 
-    .countries__cardsBox {
+    .countries__cards {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .countries__card-item {
+      .countries__cards-item {
         border-radius: 4px;
         position: relative;
 
         &:not(:last-child) {
           padding-right: 6px;
         }
-        .countries__card-imgBox {
+        .countries__cards-imgBox {
           height: 332px;
           width: 261px;
-          .countries__card-img {
+          .countries__cards-img {
             // overflow: hidden;
           }
         }
 
-        .countries__card-info {
+        .countries__cards-info {
           padding: 11px 32px 0px 0px;
           background-color: #fff;
           border-radius: 0px 6px 0px 0px;
@@ -165,12 +165,12 @@
           position: absolute;
           left: 0px;
           bottom: 0px;
-          .countries__card-title {
+          .countries__cards-info__title {
             font-weight: 600;
             font-size: 17px;
             color: #042521;
           }
-          .countries__card-nameCountry {
+          .countries__cards-info__country {
             font-weight: 500;
             font-size: 15px;
             color: #80918e;
@@ -205,7 +205,7 @@
       .guides__button {
       }
     }
-    .guides__imgBox {
+    .guides__img-box {
       .guides__img {
       }
     }
@@ -228,9 +228,9 @@
     align-items: center;
 
     .edwardNewgate__container {
-      .edwardNewgate__starsBox {
+      .edwardNewgate__stars-box {
         margin-bottom: 30px;
-        .star__icon {
+        .edwardNewgate__star {
           &:not(:last-child) {
             margin-right: 16px;
           }
@@ -245,17 +245,17 @@
         max-width: 450px;
         margin-bottom: 40px;
       }
-      .edwardNewgate__personalInfo {
+      .edwardNewgate__info {
         display: flex;
         flex-direction: column;
-        .personalInfo__name {
+        .personalInfo__info-name {
           font-family: "Inter";
           font-weight: 700;
           font-size: 22px;
           color: #000000;
           margin-bottom: 10px;
         }
-        .personalInfo__who {
+        .personalInfo__info-position {
           font-family: "Inter";
           font-weight: 400;
           font-size: 18px;
@@ -264,7 +264,7 @@
       }
     }
 
-    .edwardNewgate__imgBox {
+    .edwardNewgate__img-box {
       .edwardNewgate__img {
         border-radius: 4px;
       }
@@ -279,13 +279,13 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 56px;
-      .trendingStories__title {
+      .trendingStories__header-title {
         font-family: "Playfair Display";
         font-weight: 700;
         font-size: 36px;
         color: #000000;
       }
-      .trendingStories__view {
+      .trendingStories__header-text {
         font-family: "Inter";
         font-weight: 600;
         font-size: 17px;
@@ -295,39 +295,39 @@
       }
     }
 
-    .trendingStories__cardsBox {
+    .trendingStories__cards {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .trendingStories__card-item {
+      .trendingStories__cards-item {
         max-width: 266px;
         &:not(:last-child) {
           margin-right: 25px;
         }
-        .trendingStories__card-imgBox {
+        .trendingStories__cards-img__box {
           height: 231px;
           width: 261px;
           overflow: hidden;
           margin-bottom: 13px;
-          .trendingStories__card-img {
+          .trendingStories__cards-img {
           }
         }
 
-        .trendingStories__card-title {
+        .trendingStories__cards-title {
           font-family: "Inter";
           font-weight: 700;
           font-size: 19px;
           color: #000000;
           margin-bottom: 13px;
         }
-        .trendingStories__card-descr {
+        .trendingStories__cards-descr {
           font-family: "Inter";
           font-weight: 400;
           font-size: 15px;
           color: #7d7987;
           margin-bottom: 23px;
         }
-        .trendingStories__card-click-readMore {
+        .trendingStories__cards-click {
           font-family: "Inter";
           font-weight: 600;
           font-size: 15px;

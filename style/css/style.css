@@ -8,6 +8,22 @@
           box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 body {
   background-color: #fff;
 }
@@ -28,10 +44,21 @@ body .wrapper #header {
           align-items: center;
   margin-bottom: 80px;
 }
-body .wrapper #header .header__logo-icon {
+body .wrapper #header .header__logo-img__box .header__logo-img {
   cursor: pointer;
 }
-body .wrapper #header .menuAndButtons {
+body .wrapper #header .header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper #header .header__right .header__right-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +70,7 @@ body .wrapper #header .menuAndButtons {
           align-items: center;
   margin-right: 34px;
 }
-body .wrapper #header .menuAndButtons .header__menu {
+body .wrapper #header .header__right .header__right-menu .header__right-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +81,7 @@ body .wrapper #header .menuAndButtons .header__menu {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #header .menuAndButtons .header__menu .menu__item {
+body .wrapper #header .header__right .header__right-menu .header__right-menu__list .header__menu-list__item {
   list-style: none;
   font-size: 16px;
   font-weight: 400;
@@ -64,16 +91,13 @@ body .wrapper #header .menuAndButtons .header__menu .menu__item {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
-body .wrapper #header .menuAndButtons .header__menu .menu__item:hover {
+body .wrapper #header .header__right .header__right-menu .header__right-menu__list .header__menu-list__item:hover {
   color: #202336;
 }
-body .wrapper #header .menuAndButtons .header__menu .menu__item:not(:last-child) {
+body .wrapper #header .header__right .header__right-menu .header__right-menu__list .header__menu-list__item:not(:last-child) {
   margin-right: 34px;
 }
-body .wrapper #header .menuAndButtons .headerButtons__box {
-  margin-left: 34px;
-}
-body .wrapper #header .menuAndButtons .headerButtons__item {
+body .wrapper #header .header__right .header__right-buttons .header__right-buttons__button {
   padding: 12px 46px;
   margin: 18px;
   color: #fb8f1d;
@@ -87,11 +111,11 @@ body .wrapper #header .menuAndButtons .headerButtons__item {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-body .wrapper #header .menuAndButtons .headerButtons__item:hover {
+body .wrapper #header .header__right .header__right-buttons .header__right-buttons__button:hover {
   color: #fff;
   background-color: #fb8f1d;
 }
-body .wrapper #header .menuAndButtons .headerButtons__item:last-child {
+body .wrapper #header .header__right .header__right-buttons .header__right-buttons__button:last-child {
   margin: 0;
 }
 body .wrapper #main .button {
@@ -146,8 +170,8 @@ body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTr
   border-radius: 4px;
   margin-bottom: 48px;
 }
-body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__selectBox {
-  max-width: 471px;
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__select-box {
+  min-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,15 +179,15 @@ body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTr
       flex-wrap: wrap;
   margin-bottom: 47px;
 }
-body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__selectBox .exploreAndTravel__select {
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__select-box .exploreAndTravel__select {
   height: 52px;
   width: 220px;
   border: 0.8px solid #afb0b9;
   border-radius: 6px;
   cursor: pointer;
-  margin: 0px 0px 35px 0px;
+  margin: 0px 10px 35px 10px;
 }
-body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__selectBox .exploreAndTravel__select .select__item {
+body .wrapper #main .exploreAndTravel .exploreAndTravel__container .exploreAndTravel__select-box .exploreAndTravel__select .exploreAndTravel__select-item {
   font-family: "Inter";
   font-weight: 400;
   font-size: 15px;
@@ -183,7 +207,7 @@ body .wrapper #main .newWay {
           align-items: center;
   margin-bottom: 262px;
 }
-body .wrapper #main .newWay .newWay__imgBox {
+body .wrapper #main .newWay .newWay__img-box {
   position: relative;
   right: 102px;
 }
@@ -226,7 +250,7 @@ body .wrapper #main .countries .countries__header .countries__title {
   font-size: 36px;
   color: #000000;
 }
-body .wrapper #main .countries .countries__header .countries__view {
+body .wrapper #main .countries .countries__header .countries__text {
   font-family: "Inter";
   font-weight: 600;
   font-size: 17px;
@@ -236,7 +260,7 @@ body .wrapper #main .countries .countries__header .countries__view {
   color: #fb8f1d;
   cursor: pointer;
 }
-body .wrapper #main .countries .countries__cardsBox {
+body .wrapper #main .countries .countries__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,18 +271,18 @@ body .wrapper #main .countries .countries__cardsBox {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .countries .countries__cardsBox .countries__card-item {
+body .wrapper #main .countries .countries__cards .countries__cards-item {
   border-radius: 4px;
   position: relative;
 }
-body .wrapper #main .countries .countries__cardsBox .countries__card-item:not(:last-child) {
+body .wrapper #main .countries .countries__cards .countries__cards-item:not(:last-child) {
   padding-right: 6px;
 }
-body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-imgBox {
+body .wrapper #main .countries .countries__cards .countries__cards-item .countries__cards-imgBox {
   height: 332px;
   width: 261px;
 }
-body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-info {
+body .wrapper #main .countries .countries__cards .countries__cards-item .countries__cards-info {
   padding: 11px 32px 0px 0px;
   background-color: #fff;
   border-radius: 0px 6px 0px 0px;
@@ -270,12 +294,12 @@ body .wrapper #main .countries .countries__cardsBox .countries__card-item .count
   left: 0px;
   bottom: 0px;
 }
-body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-info .countries__card-title {
+body .wrapper #main .countries .countries__cards .countries__cards-item .countries__cards-info .countries__cards-info__title {
   font-weight: 600;
   font-size: 17px;
   color: #042521;
 }
-body .wrapper #main .countries .countries__cardsBox .countries__card-item .countries__card-info .countries__card-nameCountry {
+body .wrapper #main .countries .countries__cards .countries__cards-item .countries__cards-info .countries__cards-info__country {
   font-weight: 500;
   font-size: 15px;
   color: #80918e;
@@ -331,10 +355,10 @@ body .wrapper #main .edwardNewgate {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__starsBox {
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__stars-box {
   margin-bottom: 30px;
 }
-body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__starsBox .star__icon:not(:last-child) {
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__stars-box .edwardNewgate__star:not(:last-child) {
   margin-right: 16px;
 }
 body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__descr {
@@ -345,7 +369,7 @@ body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__des
   max-width: 450px;
   margin-bottom: 40px;
 }
-body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__personalInfo {
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,20 +378,20 @@ body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__per
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__personalInfo .personalInfo__name {
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__info .personalInfo__info-name {
   font-family: "Inter";
   font-weight: 700;
   font-size: 22px;
   color: #000000;
   margin-bottom: 10px;
 }
-body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__personalInfo .personalInfo__who {
+body .wrapper #main .edwardNewgate .edwardNewgate__container .edwardNewgate__info .personalInfo__info-position {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.85);
 }
-body .wrapper #main .edwardNewgate .edwardNewgate__imgBox .edwardNewgate__img {
+body .wrapper #main .edwardNewgate .edwardNewgate__img-box .edwardNewgate__img {
   border-radius: 4px;
 }
 body .wrapper #main .trendingStories {
@@ -386,13 +410,13 @@ body .wrapper #main .trendingStories .trendingStories__header {
           align-items: center;
   margin-bottom: 56px;
 }
-body .wrapper #main .trendingStories .trendingStories__header .trendingStories__title {
+body .wrapper #main .trendingStories .trendingStories__header .trendingStories__header-title {
   font-family: "Playfair Display";
   font-weight: 700;
   font-size: 36px;
   color: #000000;
 }
-body .wrapper #main .trendingStories .trendingStories__header .trendingStories__view {
+body .wrapper #main .trendingStories .trendingStories__header .trendingStories__header-text {
   font-family: "Inter";
   font-weight: 600;
   font-size: 17px;
@@ -402,7 +426,7 @@ body .wrapper #main .trendingStories .trendingStories__header .trendingStories__
   color: #fb8f1d;
   cursor: pointer;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox {
+body .wrapper #main .trendingStories .trendingStories__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,33 +437,33 @@ body .wrapper #main .trendingStories .trendingStories__cardsBox {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item {
+body .wrapper #main .trendingStories .trendingStories__cards .trendingStories__cards-item {
   max-width: 266px;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item:not(:last-child) {
+body .wrapper #main .trendingStories .trendingStories__cards .trendingStories__cards-item:not(:last-child) {
   margin-right: 25px;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-imgBox {
+body .wrapper #main .trendingStories .trendingStories__cards .trendingStories__cards-item .trendingStories__cards-img__box {
   height: 231px;
   width: 261px;
   overflow: hidden;
   margin-bottom: 13px;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-title {
+body .wrapper #main .trendingStories .trendingStories__cards .trendingStories__cards-item .trendingStories__cards-title {
   font-family: "Inter";
   font-weight: 700;
   font-size: 19px;
   color: #000000;
   margin-bottom: 13px;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-descr {
+body .wrapper #main .trendingStories .trendingStories__cards .trendingStories__cards-item .trendingStories__cards-descr {
   font-family: "Inter";
   font-weight: 400;
   font-size: 15px;
   color: #7d7987;
   margin-bottom: 23px;
 }
-body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories__card-item .trendingStories__card-click-readMore {
+body .wrapper #main .trendingStories .trendingStories__cards .trendingStories__cards-item .trendingStories__cards-click {
   font-family: "Inter";
   font-weight: 600;
   font-size: 15px;
@@ -447,8 +471,9 @@ body .wrapper #main .trendingStories .trendingStories__cardsBox .trendingStories
   cursor: pointer;
 }
 body .wrapper #footer {
-  background-color: #f9f9fb;
   padding-top: 78px;
+  background-color: #f9f9fb;
+  font-family: "Mulish";
 }
 body .wrapper #footer .footer__wrapper .footer__columns {
   display: -webkit-box;
@@ -459,10 +484,10 @@ body .wrapper #footer .footer__wrapper .footer__columns {
           justify-content: space-between;
   margin-bottom: 77px;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn__imgBox {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-left .footer__left-img__box {
   margin-bottom: 26px;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn__descr-top {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-left .footer__columns-left__descr {
   margin-bottom: 55px;
   max-width: 298px;
   font-family: "Mulish";
@@ -470,13 +495,13 @@ body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn_
   font-size: 18px;
   color: #848484;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .leftColumn .leftColumn__descr-bottom {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-left .footer__columns-left__text {
   font-family: "Mulish";
   font-weight: 300;
   font-size: 17px;
   color: #848484;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,64 +512,24 @@ body .wrapper #footer .footer__wrapper .footer__columns .rightColumn {
       -ms-flex-align: start;
           align-items: start;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-right .footer__columns-right__list:not(:last-child) {
   margin-right: 158px;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations .destinations__title {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-right .footer__columns-right__list .footer__right-list__title {
   list-style: none;
-  font-family: "Mulish";
   font-weight: 700;
   font-size: 19px;
   color: #000000;
   margin-bottom: 35px;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations .destinations__item {
-  font-family: "Mulish";
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-right .footer__columns-right__list .footer__right-list__item {
   font-weight: 300;
   font-size: 18px;
   color: #848484;
   list-style: none;
+  cursor: pointer;
 }
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__destinations .destinations__item:not(:last-child) {
-  margin-bottom: 25px;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop {
-  margin-right: 126px;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop .shop__title {
-  list-style: none;
-  font-family: "Mulish";
-  font-weight: 700;
-  font-size: 19px;
-  color: #000000;
-  margin-bottom: 35px;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop .shop__item {
-  list-style: none;
-  font-family: "Mulish";
-  font-weight: 300;
-  font-size: 18px;
-  color: #848484;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__shop .shop__item:not(:last-child) {
-  margin-bottom: 25px;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__interests .interests__title {
-  list-style: none;
-  font-family: "Mulish";
-  font-weight: 700;
-  font-size: 19px;
-  color: #000000;
-  margin-bottom: 35px;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__interests .interests__item {
-  list-style: none;
-  font-family: "Mulish";
-  font-weight: 300;
-  font-size: 18px;
-  color: #848484;
-}
-body .wrapper #footer .footer__wrapper .footer__columns .rightColumn .rightColumn__interests .interests__item:not(:last-child) {
+body .wrapper #footer .footer__wrapper .footer__columns .footer__columns-right .footer__columns-right__list .footer__right-list__item:not(:last-child) {
   margin-bottom: 25px;
 }
 body .wrapper #footer .footer__wrapper .footer__separator {
@@ -553,8 +538,7 @@ body .wrapper #footer .footer__wrapper .footer__separator {
   height: 0.6px;
   background-color: #c4c4c4;
 }
-body .wrapper #footer .footer__wrapper .footer__iconsMedia-box {
-  margin: 0 auto;
+body .wrapper #footer .footer__wrapper .footer__icons-img__box {
   max-width: 249px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,7 +549,9 @@ body .wrapper #footer .footer__wrapper .footer__iconsMedia-box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
-body .wrapper #footer .footer__wrapper .footer__iconsMedia-box .footer__iconsMedia-icon:not(:last-child) {
+body .wrapper #footer .footer__wrapper .footer__icons-img__box .footer__icons-img:not(:last-child) {
+  cursor: pointer;
   margin-right: 35px;
 }

@@ -1,97 +1,56 @@
 #footer {
-  background-color: #f9f9fb;
   padding-top: 78px;
+  background-color: #f9f9fb;
+  font-family: "Mulish";
   .footer__wrapper {
     .footer__columns {
       display: flex;
       justify-content: space-between;
       margin-bottom: 77px;
-      .leftColumn {
-        .leftColumn__imgBox {
+      .footer__columns-left {
+        .footer__left-img__box {
           margin-bottom: 26px;
-          .leftColumn__img {
+          .footer__left-img {
           }
         }
 
-        .leftColumn__descr-top {
+        .footer__columns-left__descr {
           margin-bottom: 55px;
           max-width: 298px;
-          font-family: 'Mulish';
+          font-family: "Mulish";
           font-weight: 300;
           font-size: 18px;
           color: #848484;
         }
-        .leftColumn__descr-bottom {
-          font-family: 'Mulish';
+        .footer__columns-left__text {
+          font-family: "Mulish";
           font-weight: 300;
           font-size: 17px;
           color: #848484;
         }
       }
 
-      .rightColumn {
+      .footer__columns-right {
         display: flex;
         justify-content: start;
         align-items: start;
-        .rightColumn__destinations {
-          margin-right: 158px;
-          .destinations__title {
+        .footer__columns-right__list {
+          &:not(:last-child) {
+            margin-right: 158px;
+          }
+          .footer__right-list__title {
             list-style: none;
-            font-family: 'Mulish';
             font-weight: 700;
             font-size: 19px;
             color: #000000;
             margin-bottom: 35px;
           }
-          .destinations__item {
-            font-family: 'Mulish';
+          .footer__right-list__item {
             font-weight: 300;
             font-size: 18px;
             color: #848484;
             list-style: none;
-            &:not(:last-child) {
-              margin-bottom: 25px;
-            }
-          }
-        }
-
-        .rightColumn__shop {
-          margin-right: 126px;
-          .shop__title {
-            list-style: none;
-            font-family: 'Mulish';
-            font-weight: 700;
-            font-size: 19px;
-            color: #000000;
-            margin-bottom: 35px;
-          }
-          .shop__item {
-            list-style: none;
-            font-family: 'Mulish';
-            font-weight: 300;
-            font-size: 18px;
-            color: #848484;
-            &:not(:last-child) {
-              margin-bottom: 25px;
-            }
-          }
-        }
-
-        .rightColumn__interests {
-          .interests__title {
-            list-style: none;
-            font-family: 'Mulish';
-            font-weight: 700;
-            font-size: 19px;
-            color: #000000;
-            margin-bottom: 35px;
-          }
-          .interests__item {
-            list-style: none;
-            font-family: 'Mulish';
-            font-weight: 300;
-            font-size: 18px;
-            color: #848484;
+            cursor: pointer;
             &:not(:last-child) {
               margin-bottom: 25px;
             }
@@ -107,14 +66,15 @@
       background-color: #c4c4c4;
     }
 
-    .footer__iconsMedia-box {
-      margin: 0 auto;
+    .footer__icons-img__box {
       max-width: 249px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .footer__iconsMedia-icon {
+      margin: 0 auto;
+      .footer__icons-img {
         &:not(:last-child) {
+          cursor: pointer;
           margin-right: 35px;
         }
       }
